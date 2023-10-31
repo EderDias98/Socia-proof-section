@@ -145,9 +145,23 @@ textarea {
 
 
 
+/* ===================================================================
+ * # Body style
+ *
+ * ------------------------------------------------------------------- */
 
+.section{
+  background-color: var(--color-Dark-Grayish-Magenta);
+}
 
-
+body{
+  width: 100vh;
+  height: 100vh;
+  background-image: url('../images/bg-pattern-top-desktop.svg'), url('../images/bg-pattern-bottom-desktop.svg');
+  background-size: 35% 35%, 55% 80%; /* Para ajustar a imagem para cobrir todo o corpo */
+  background-repeat: no-repeat, no-repeat; /* Para impedir a repetição da imagem */
+  background-position: top left,bottom;
+}
 
 
 
