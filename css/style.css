@@ -1,5 +1,6 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
 
 
 
@@ -11,7 +12,9 @@
 /* ------------------------------------------------------------------- 
  * ## fonts 
  * ------------------------------------------------------------------- */
- @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;700&display=swap');
+ 
+
+
  :root {
      --font-main: 'League Spartan', sans-serif;
 
@@ -150,11 +153,13 @@ textarea {
  *
  * ------------------------------------------------------------------- */
 
-.section{
-  background-color: var(--color-Dark-Grayish-Magenta);
+.section1{
+  display: flex;
+  
 }
 
 body{
+  font-family: var(--font-main);
   width: 100vh;
   height: 100vh;
   background-image: url('../images/bg-pattern-top-desktop.svg'), url('../images/bg-pattern-bottom-desktop.svg');
@@ -163,6 +168,32 @@ body{
   background-position: top left,bottom;
 }
 
+
+.box-1{
+  border: 3px solid red;
+}
+
+.box-2{
+  border: 3px solid red;
+}
+
+
+.content-1{
+  color: var(--color-Dark-Magenta);
+  font-weight:bolder;
+  font-size: x-large;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.content-2{
+  color: var(--color-Dark-Grayish-Magenta);
+  font-weight: 500;
+  font-size:1.4rem;
+  word-wrap: break-word;
+  overflow: hidden;
+  line-height: 1.4em ;
+}
 
 
 
