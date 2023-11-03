@@ -157,8 +157,8 @@ textarea {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 35% ;
-  margin: 4% 8% 2% 8%;
+  height: 45% ;
+
 
 }
 
@@ -166,42 +166,44 @@ textarea {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 40% ;
-  margin: 4% 8%;
-  border: 3px solid red;
+  height: 45% ;
+  
+
   
 }
 
-html, body {
+html, body, main {
   height: 100%;
   margin: 0;
 }
 
 
-  body{
+main{
   font-family: var(--font-main);
   background-image: url('../images/bg-pattern-top-desktop.svg'), url('../images/bg-pattern-bottom-desktop.svg');
   background-size: 35% 35%, 55% 80%; /* Para ajustar a imagem para cobrir todo o corpo */
   background-repeat: no-repeat, no-repeat; /* Para impedir a repetição da imagem */
   background-position: top left,bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-start;
+  margin: 3% 10% 0 10%;
 }
 
 
 
-@media (max-width: 900px) {
-  .section1:nth-child(1), .section1:nth-child(2) {
-    flex-direction: column;
-  }
-} 
+
 
 .box-1{
 
-  border: 3px solid red;
+
   flex: 1;
 }
 
 .box-2{
-  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   flex: 1;
 }
 
@@ -209,10 +211,11 @@ html, body {
 .content-1{
   color: var(--color-Dark-Magenta);
   font-weight:bolder;
-  font-size: x-large;
+  font-size: xx-large;
   word-wrap: break-word;
   overflow: hidden;
-  width: 50%;
+  padding-right: 20%;
+  margin-top: 10%;
   
 }
 
@@ -223,10 +226,90 @@ html, body {
   word-wrap: break-word;
   overflow: hidden;
   line-height: 1.3em ;
-  width: 60%;
+  margin-top: 10%;
+}
+
+.box-2>div{
+  background-color: var(--color-Light-Grayish-Magenta);
+  border-radius: 10px;
+  height: 18%;
+  width: 80%;
+  margin-top: 5%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-Dark-Magenta);
+  font-weight: bolder;
+  
+}
+
+.estrelas{
+
+  width: 19%;
+  height: 30%;
+  background-image: url("../images/icon-star.svg");
+  background-repeat: repeat-x;
+  background-size: 14.9px ;
+  margin-right: 15%;
+
+}
+
+.estrela-2{
+  margin-left: 10%;
+}
+.estrela-3{
+  
+  margin-left: 20%;
+
+}
+
+img    {
+  border-radius: 50%;
+}
+
+.pink{
+  color: var(--color-Soft_Pink);
 }
 
 
+.pad{
+  padding: 3%;
+  background-color: var(--color-Dark-Magenta);
+  color: var(--color-White);
+  border-radius: 10px;
+  font-weight: 500;
+  font-size:1rem;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.marge-1{
+  margin: 0% 4% 15% 0;
+}
+.marge-2{
+  margin: 5% 4% 10% 0;
+}
+.marge-3{
+  margin: 10% 4% 5% 0;
+}
+.nomes{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+.cima{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10%;
+  
+}
+.pad-1 p{
+  margin-bottom: 15%;
+  width: 100%;
+}
 
 
 
@@ -268,20 +351,14 @@ html, body {
    * Render the `main` element consistently in IE.
    */
   
-  main {
-    display: block;
-  }
+
   
   /**
    * Correct the font size and margin on `h1` elements within `section` and
    * `article` contexts in Chrome, Firefox, and Safari.
    */
   
-  h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-  }
-  
+
   /* Grouping content
      ========================================================================== */
   
