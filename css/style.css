@@ -77,7 +77,7 @@ svg, img, video embed, iframe, object {
 /* ------------------------------------------------------------------- 
  * ## typography resets
  * ------------------------------------------------------------------- */
-div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, blockquote, th, td {
     margin: 0;
     padding: 0;
 }
@@ -312,13 +312,120 @@ img    {
 }
 
 
+/*
+  Arrumar responsibidade do site para celulares
+*/
+
+@media only screen and (max-width: 800px){
+  background-image: none;
+  body{
+    font-family: var(--font-main);
+    background-image: url('../images/bg-pattern-top-mobile.svg'), url('../images/bg-pattern-bottom-mobile.svg');
+    background-size: 100vw 35%, 55% 80%; /* Para ajustar a imagem para cobrir todo o corpo */
+    background-repeat: no-repeat, no-repeat; /* Para impedir a repetição da imagem */
+    background-position: top left,bottom left;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-start;
+
+  }
+
+  body,main,.section1,.section2{
+    height: auto;
+  }
+  main{
+
+    margin: 6vh 3vh 0 3vh;
+  }
+  .section1{
+    flex-direction: column;
+  }
+  .section2{
+
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin-top: 3vh;
+  }
+  .content-1,.content-2 {
+    font-size: 5vw;
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .content-1{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+  }
+  h1{
+    font-size: 10vw;
+  }
+
+  .pad,.box-1,.box-2,.estrela-1, .estrela-2, .estrela-3,.estrelas{
+    font-size: 3vw;
+    padding: 0 !important;
+    margin: 0 !important;
+   
+  }
+  .box-2{
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh !important;
+   
+  }
+  .estrela-1, .estrela-2, .estrela-3{
+    height: 8vh !important;
+    margin-bottom: 3vh !important;
+    flex-direction: column;
+    font-size: 1rem;
+    width: 100% !important;
+    
+  }
+  .nomes span{
+    margin-bottom: 0.5vh;
+  
+  }
+  img{
+    object-fit: fill;
+  }
+  .imag{
+    width: 12vw ;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+  }
+  .estrelas{
+    width: 18vw;
+  }
+  .box-2 span{
+    margin-top: 1vh;
+  }
+
+  .pad{
+    height: 30vh;
+    margin-bottom: 4vh !important;
+    font-size: 1rem;
+  }
+  .pad .cima{
+    margin-top: 2vh;
+    margin-left: 10vw;
+    height: 30%;
+  }
+  .par{
+    margin-bottom: 4vh;
+    padding: 0 3.5vh;
+    font-size: 1.1rem;
+    line-height: 2.5vh;
+  }
+
+}
 
 
 
-
-
-
-
+.attribution{
+  display: none;
+}
 
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
