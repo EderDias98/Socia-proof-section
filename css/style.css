@@ -177,13 +177,18 @@ html, body, main {
   margin: 0;
 }
 
-
-main{
-  font-family: var(--font-main);
+body{
   background-image: url('../images/bg-pattern-top-desktop.svg'), url('../images/bg-pattern-bottom-desktop.svg');
   background-size: 35% 35%, 55% 80%; /* Para ajustar a imagem para cobrir todo o corpo */
   background-repeat: no-repeat, no-repeat; /* Para impedir a repetição da imagem */
   background-position: top left,bottom;
+
+}
+
+
+main{
+  font-family: var(--font-main);
+
   display: flex;
   flex-direction: column;
   justify-content:space-start;
